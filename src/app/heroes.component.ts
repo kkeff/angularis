@@ -9,7 +9,7 @@ import { HeroService } from './hero.service';
   template: `
               <h1>{{title}}</h1>
               <hero-detail [hero]="selectedHero"></hero-detail>
-              <h2>My Heroes</h2>
+              <h2>My Heroess</h2>
               <ul class="heroes">
                 <li *ngFor="let hero of heroes"
                     (click)="onSelect(hero)"
