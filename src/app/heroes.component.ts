@@ -3,21 +3,20 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
-
 @Component({
   selector: 'my-heroes',
   template: `
-              <h1>{{title}}</h1>
-              <hero-detail [hero]="selectedHero"></hero-detail>
-              <h2>My Heroess</h2>
-              <ul class="heroes">
-                <li *ngFor="let hero of heroes"
-                    (click)="onSelect(hero)"
-                    [class.selected]="hero === selectedHero">
-                  <span class="badge">{{hero.id}}</span> {{hero.name}}
-                </li>
-              </ul>
-              `,
+    <h1>{{title}}</h1>
+    <hero-detail [hero]="selectedHero"></hero-detail>
+    <h2>My Heroess</h2>
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes"
+          (click)="onSelect(hero)"
+          [class.selected]="hero === selectedHero">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </li>
+    </ul>
+  `,
   styles: [`
   .selected {
     background-color: #CFD8DC !important;

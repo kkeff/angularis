@@ -19,7 +19,7 @@ import { HeroService } from './hero.service';
         component: HeroesComponent
       },
       {
-        path: 'hero-detail',
+        path: 'detail/:id',
         component: HeroDetailComponent
       },
       {
@@ -39,7 +39,7 @@ import { HeroService } from './hero.service';
     HeroDetailComponent,
     HeroesComponent
   ],
-  providers: [HeroService],
+  providers: [ HeroService ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

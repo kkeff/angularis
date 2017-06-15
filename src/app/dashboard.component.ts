@@ -8,9 +8,15 @@ import { HeroService } from './hero.service'
   templateUrl: './dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
+
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService) { }
+
+  onHeroSelect(hero: Hero): void {
+
+  }
+
   ngOnInit(): void {
     this.heroService.getHeroes()
       .then(heroes => this.heroes = heroes.slice(1, 5));
