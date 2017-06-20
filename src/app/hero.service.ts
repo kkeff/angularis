@@ -59,4 +59,3 @@ export class HeroService {
     return Promise.reject(error.message || error);
   }
 }
-

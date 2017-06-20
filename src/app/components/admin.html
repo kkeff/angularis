@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<div class="grid grid-pad">
+  <h2>Active</h2>
+  <div *ngFor="let event of activeEvents">
+    <div>
+      <span>{{event.name}} - </span>
+      <span>Teams: {{event.teams.length}} - </span>
+      <span>Date: {{event.fromDate}}-{{event.toDate}}</span>
+    </div>
+  </div>
+</div>

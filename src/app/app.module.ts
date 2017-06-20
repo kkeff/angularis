@@ -7,8 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
+import { InMemoryDataService }  from './backend/in-memory-data.service';
 
+import { AdminComponent }       from './components/admin';
+import { EventService }          from './services/event';
+
+// Remove following
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard.component';
 import { HeroesComponent }      from './heroes.component';
@@ -25,13 +29,17 @@ import { HeroSearchComponent }  from './hero-search.component';
     AppRoutingModule
   ],
   declarations: [
+    AdminComponent,
     AppComponent,
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
     HeroSearchComponent
   ],
-  providers: [ HeroService ],
+  providers: [
+    EventService,
+    HeroService
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
