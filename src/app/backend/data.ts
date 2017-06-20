@@ -54,8 +54,8 @@ export const events = [
   },
   {
     id: 2,
-    name: 'Dreamhack Summer 2017',
-    status: 'ACTIVE',
+    name: 'Dreamhack Winter 2017',
+    status: 'FINISHED',
     fromDate: '2017-06-20',
     toDate: '2017-06-24',
     teams: [
@@ -68,7 +68,7 @@ export const events = [
   {
     id: 3,
     name: 'ESL 2017',
-    status: 'asdf',
+    status: 'FINISHED',
     fromDate: '2017-06-20',
     toDate: '2017-06-24',
     teams: [
@@ -80,8 +80,8 @@ export const events = [
   },
   {
     id: 3,
-    name: 'ESL 2017',
-    status: 'asdf',
+    name: 'WCG 2017',
+    status: 'UPCOMING',
     fromDate: '2017-06-20',
     toDate: '2017-06-24',
     teams: [

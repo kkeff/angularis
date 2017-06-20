@@ -1,0 +1,40 @@
+.event-status-header {
+  margin-top: 30px;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.event-status-border{
+  margin-top: 0px;
+  border-style: solid;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-width: medium;
+}
+
+.event-header {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+  display: block;
+  cursor: pointer;
+}
+
+.event-header:hover {
+  color: #d3d3d3;
+}
+
+.event-header span {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.event-details {
+  background-color: #e8e8e8;
+  color: black;
+}

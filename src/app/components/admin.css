@@ -1,0 +1,12 @@
+.active-events {
+  color: #1a7a24;
+}
+.upcoming-events {
+  color: #15367c;
+}
+.ongoing-events {
+  color: #6d450e;
+}
+.finished-events {
+  color: #6d0e16;
+}

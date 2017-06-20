@@ -1,0 +1,14 @@
+<div class="event-status-header">
+  {{header}}
+</div>
+<hr class="event-status-border">
+
+<div *ngFor="let event of events">
+  <a class="event-header" (click)="toggleDetails(event);">
+    <span>{{event.name}}</span>
+    <span>Date: {{event.fromDate}} - {{event.toDate}}</span>
+  </a>
+  <div *ngIf="event.showDetails" class="event-details">
+    HEJHEJHEJ
+  </div>
+</div>

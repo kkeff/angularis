@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../services/event';
+import { AdminEventComponent } from './admin-event';
 
 import { Event } from '../models/event';
 
 @Component({
   selector: 'admin',
   templateUrl: './admin.html',
+  styleUrls: ['./admin.css'],
 })
 
 export class AdminComponent implements OnInit {
-  title = 'Admin';
+  title = 'Admin - Events';
   selectedEvent: Event = null;
   activeEvents: Event[] = [];
   upcomingEvents: Event[] = [];

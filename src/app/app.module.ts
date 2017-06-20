@@ -10,6 +10,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './backend/in-memory-data.service';
 
 import { AdminComponent }       from './components/admin';
+import { AdminEventComponent }       from './components/admin-event';
 import { EventService }          from './services/event';
 
 // Remove following
@@ -30,6 +31,7 @@ import { HeroSearchComponent }  from './hero-search.component';
   ],
   declarations: [
     AdminComponent,
+    AdminEventComponent,
     AppComponent,
     DashboardComponent,
     HeroDetailComponent,

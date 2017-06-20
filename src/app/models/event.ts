@@ -8,6 +8,7 @@ export class Event {
   fromDate: string;
   toDate: string;
   teams: Array<string>;
+  showDetails: boolean;
   matches: Array<Match>;
   prizeDistrubutions: Array<PrizeDistrubution>;
   playoffType: string;

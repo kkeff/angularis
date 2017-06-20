@@ -1,11 +1,15 @@
 <h1>{{title}}</h1>
-<div class="grid grid-pad">
-  <h2>Active</h2>
-  <div *ngFor="let event of activeEvents">
-    <div>
-      <span>{{event.name}} - </span>
-      <span>Teams: {{event.teams.length}} - </span>
-      <span>Date: {{event.fromDate}}-{{event.toDate}}</span>
-    </div>
+<div class="card">
+  <div *ngIf="activeEvents" class="active-events">
+    <admin-event [events]="activeEvents" [header]="'Active'"></admin-event>
+  </div>
+  <div *ngIf="upcomingEvents" class="upcoming-events">
+    <admin-event [events]="upcomingEvents" [header]="'Upcoming'"></admin-event>
+  </div>
+  <div *ngIf="ongoingEvents" class="ongoing-events">
+    <admin-event [events]="ongoingEvents" [header]="'Ongoing'"></admin-event>
+  </div>
+  <div *ngIf="finishedEvents" class="finished-events">
+    <admin-event [events]="finishedEvents" [header]="'Finished'"></admin-event>
   </div>
 </div>
