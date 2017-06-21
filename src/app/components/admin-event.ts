@@ -12,7 +12,7 @@ export class AdminEventComponent {
   @Input() events: Event[];
   @Input() header: string;
 
-  toggleDetails(event: Event){
+  toggleDetails(event: Event) {
     event.showDetails = !event.showDetails;
   }
 }

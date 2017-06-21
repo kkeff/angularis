@@ -4,4 +4,4 @@ export default {
       ACTIVE: 'ACTIVE'
     }
   }
-}
+};

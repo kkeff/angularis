@@ -10,7 +10,7 @@ export const heroes = [
   { id: 18, name: 'Dr IQ' },
   { id: 19, name: 'Magma' },
   { id: 20, name: 'Tornado' }
-]
+];
 
 export const events = [
   {
@@ -91,4 +91,4 @@ export const events = [
       'Fnatic'
     ]
   },
-]
+];

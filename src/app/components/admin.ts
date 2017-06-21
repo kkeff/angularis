@@ -22,7 +22,7 @@ export class AdminComponent implements OnInit {
 
   mapEvents(events: Event[]): void {
     events.forEach(event => {
-      switch(event.status){
+      switch (event.status) {
         case 'ACTIVE':
           this.activeEvents.push(event);
           break;
@@ -33,7 +33,7 @@ export class AdminComponent implements OnInit {
           this.upcomingEvents.push(event);
           break;
         case 'FINISHED':
-        // Sort finished according to date
+          // Sort finished according to date
           this.finishedEvents.push(event);
           break;
       }

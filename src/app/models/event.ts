@@ -1,5 +1,5 @@
-import { Match } from './match'
-import { PrizeDistrubution } from './prize-distrubution'
+import { Match } from './match';
+import { PrizeDistrubution } from './prize-distrubution';
 
 export class Event {
   id: number;
