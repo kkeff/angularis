@@ -3,12 +3,29 @@
 </div>
 <hr class="event-status-border">
 
-<div *ngFor="let event of events">
+<div class="event" *ngFor="let event of events">
   <a class="event-header" (click)="toggleDetails(event);">
     <span>{{event.name}}</span>
     <span>Date: {{event.fromDate}} - {{event.toDate}}</span>
   </a>
   <div *ngIf="event.showDetails" class="event-details">
-    HEJHEJHEJ
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Teams</h2>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="row">
+            <div *ngFor="let team of event.teams" class="col-6 team">
+              <img [src]="getTeamLogo(team)" width="80px" height="80px"/>
+              <span>{{team}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          Column brevid
+        </div>
+      </div>
+    </div>
   </div>
 </div>
